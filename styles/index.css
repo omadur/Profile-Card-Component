@@ -1,0 +1,117 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --light-gray: hsl(227, 10%, 90%);
+    --font-kumbh-sans: 'Kumbh Sans', sans-serif;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-cyan);
+    background-image: url('../images/bg-pattern-top.svg'), url(../images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+    width: 327px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 10px 7px 13px -7px rgb(114, 114, 114);
+}
+
+.card_content-image {
+    width: 327px;
+}
+
+.content-image_footer {
+    width: 100%;
+    display: block;
+}
+
+.body-card_content-image {
+    display: flex;
+    justify-content: center;
+    margin-top: -48px;
+}
+
+.body-card_image-user {
+    border-radius: 100%;
+    border: 5px solid white;
+    background-color: white;
+
+}
+
+.card_body-card h1 {
+    text-align: center;
+    font-family: var(--font-kumbh-sans);
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: var(--very-dark-desaturated-blue);
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+
+.card_body-card h1 span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.card_body-card p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--font-kumbh-sans);
+    color: var(--Dark-gray);
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.card_card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: var(--font-kumbh-sans);
+    border-top: 1px solid var(--light-gray);
+}
+
+.card-footer_points {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-footer_points h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+}
+
+.card-footer_points span {
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--dark-grayish-blue);
+}
